@@ -3550,24 +3550,6 @@
     function getId(id) {
         return document.getElementById(id);
     }
-    Cal.prototype.attachClickEventToDays = function() {
-        var days = document.querySelectorAll("#" + this.divId + " td.normal, #" + this.divId + " td.today");
-        for (var i = 0; i < days.length; i++) days[i].addEventListener("click", this.onClickDay);
-    };
-    Cal.prototype.onClickDay = function() {
-        var selectedDay = this.innerText;
-        var clientName = prompt("Enter the client's name:");
-        if (null !== clientName) console.log("Client: " + clientName + ", Date: " + selectedDay);
-    };
-    (void 0).attachClickEventToDays();
-    Cal.prototype.nextMonth = function() {
-        this.showcurr();
-        this.attachClickEventToDays();
-    };
-    Cal.prototype.previousMonth = function() {
-        this.showcurr();
-        this.attachClickEventToDays();
-    };
     window["FLS"] = true;
     isWebp();
     menuInit();

@@ -1343,6 +1343,57 @@ td ._data {
 .client__menu-link:hover .text-block-my-clients__btn {
   display: block;
 }
+
+.account-client {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+}
+@media (max-width: 47.99875em) {
+  .account-client {
+    flex-direction: column;
+  }
+}
+.account-client__body {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 47.99875em) {
+  .account-client__body {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.account-client__top {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0px 0px 20px 0px;
+}
+.account-client__title {
+  margin: 0;
+}
+
+.account-client__right {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 47.99875em) {
+  .account-client__right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.right-client__content {
+  background: #FFFFFF;
+  border: 1px solid #E7E3D4;
+  box-shadow: 2px 8px 16px rgba(194, 198, 208, 0.06);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 31.25rem;
+}
 .swiper {
   overflow: hidden;
 }
