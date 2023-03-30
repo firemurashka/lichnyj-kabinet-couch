@@ -1039,7 +1039,7 @@ animation: ani 0.5s forwards;
 table {
   clear: both;
   width: 100%;
-  border: 1px solid #dcdcff;
+  border: 1px solid #E7E3D4;
   border-radius: 3px;
   border-collapse: collapse;
   color: #444;
@@ -1049,8 +1049,8 @@ td {
   height: 48px;
   text-align: center;
   vertical-align: middle;
-  border-right: 1px solid #dcdcff;
-  border-top: 1px solid #dcdcff;
+  border-right: 1px solid #E7E3D4;
+  border-top: 1px solid #E7E3D4;
   width: 14.28571429%;
 }
 
@@ -1108,6 +1108,13 @@ td.today {
   font-weight: bold;
 }
 
+td ._data {
+  background-color: #972d2d;
+}
+
+.aside__aside {
+  font-size: 16px;
+}
 @media (max-width: 61.99875em) {
   .aside__aside {
     display: none;
@@ -1135,8 +1142,12 @@ td.today {
 .aside__image-box {
   position: relative;
   margin: 0px 0px 30px 0px;
+  height: 120px;
+  width: 120px;
+  overflow: hidden;
+  border-radius: 50%;
 }
-.aside__image-box img {
+.aside__image-box .aside__img-camera {
   position: absolute;
   bottom: 0;
   left: 90px;
@@ -1144,9 +1155,21 @@ td.today {
   height: 18px;
 }
 @media (max-width: 29.99875em) {
-  .aside__image-box img {
+  .aside__image-box .aside__img-camera {
     left: 50px;
   }
+}
+.aside__image-box img {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 120px;
+  width: 120px;
+  transition: all 0.5s linear;
+}
+.aside__image-box img:hover {
+  transform: scale(1.3);
+  width: 120px;
+  overflow: hidden;
 }
 @media (max-width: 47.99875em) {
   .aside__image-box {
@@ -1242,8 +1265,54 @@ td.today {
   width: 100%;
 }
 
-.page-my-clients .text-block-my-clients:not(:last-child) {
-  padding-bottom: 50px;
+.page-schedule .couch-my-сalendar {
+  width: 100%;
+}
+
+.page-my-clients .text-block-my-clients:hover {
+  background: none;
+}
+.page-my-clients .text-block-my-clients {
+  padding: 20px 10px;
+}
+.page-my-clients .text-block-my-clients__icons {
+  display: flex;
+  gap: 20px;
+}
+.page-my-clients .text-block-my-clients__icons img {
+  width: 20px;
+  height: 20px;
+}
+.page-my-clients .text-block-my-clients__icons li:first-child {
+  filter: invert(51%) sepia(22%) saturate(6969%) hue-rotate(194deg) brightness(97%) contrast(89%);
+  transition: all 0.3s ease 0s;
+}
+.page-my-clients .text-block-my-clients__icons li:first-child:hover {
+  filter: invert(35%) sepia(78%) saturate(594%) hue-rotate(177deg) brightness(94%) contrast(91%);
+}
+.page-my-clients .text-block-my-clients__icons li:nth-child(2) {
+  filter: invert(30%) sepia(8%) saturate(7216%) hue-rotate(308deg) brightness(99%) contrast(94%);
+  opacity: 0.5;
+  transition: all 0.3s ease 0s;
+}
+.page-my-clients .text-block-my-clients__icons li:nth-child(2):hover {
+  opacity: 1;
+}
+.page-my-clients .text-block-my-clients__icons li:nth-child(3) {
+  filter: invert(97%) sepia(82%) saturate(1596%) hue-rotate(322deg) brightness(93%) contrast(98%);
+  opacity: 0.5;
+  transition: all 0.3s ease 0s;
+}
+.page-my-clients .text-block-my-clients__icons li:nth-child(3):hover {
+  opacity: 1;
+}
+.page-my-clients .text-block-my-clients__icons li:last-child {
+  filter: invert(71%) sepia(5%) saturate(1376%) hue-rotate(184deg) brightness(80%) contrast(85%);
+  opacity: 0.5;
+  transition: all 0.3s ease 0s;
+}
+.page-my-clients .text-block-my-clients__icons li:last-child:hover {
+  opacity: 1;
 }
 
 .page-client-page .couch-my-clients__top {
