@@ -6,25 +6,22 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230330213101">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230403214435">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- 	&display=swap -->
 	<!-- 	&subset=cyrillic-ext -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Reset CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css?_v=20230330213101">
-	<!-- Font Awesome CSS  -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css?_v=20230330213101" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css?_v=20230403214435">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css?_v=20230330213101" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
 	<!-- Calendar Style CSS -->
-	<link rel="stylesheet" href="scr/styles.css?_v=20230330213101">
-
+	<link rel="stylesheet" href="scr/styles.css?_v=20230403214435">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230403214435" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230403214435" rel="stylesheet" />
 </head>
 
 <body>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?_v=20230330213101">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -51,25 +48,22 @@
 									<a href="index.html" class="menu__link">Главная</a>
 								</li>
 								<li class="menu__item">
+									<a href="my-profile.html" class="menu__link">Мой профиль</a>
+								</li>
+								<li class="menu__item">
 									<a href="my-clients.html" class="menu__link">Мои клиенты</a>
 								</li>
 								<li class="menu__item">
-									<a href="schedule.html" class="menu__link">Расписание</a>
+									<a href="my-articles.html" class="menu__link">Мои статьи</a>
 								</li>
 								<li class="menu__item">
-									<a href="settings.html" class="menu__link">Настройки</a>
-									<button data-spoller type="button" class="menu__arrow _icon-arrow-down"></button>
-									<ul class="menu__sub-list">
-										<li class="menu__sub-item">
-											<a href="" class="menu__sub-link">Action</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="" class="menu__sub-link">Another action</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="" class="menu__sub-link">Something else here</a>
-										</li>
-									</ul>
+									<a href="my-news.html" class="menu__link">Мои новости</a>
+								</li>
+								<li class="menu__item">
+									<a href="my-messages.html" class="menu__link">Мои сообщения</a>
+								</li>
+								<li class="menu__item">
+									<a href="my-organizer.html" class="menu__link">Мой органайзер</a>
 								</li>
 							</ul>
 						</nav>
@@ -92,103 +86,67 @@
 			</div>
 		</header>
 
-		<main class="page page-client-page">
-			<section class="account">
-				<div class="account__container">
-					<div class="account__body">
-						<aside class="aside__aside">
-							<div class="aside__column-left">
-								<div class="couch-my-clients">
-									<div class="aside__logo">
-										<div class="aside__image-box">
-
-											<picture><source srcset="img/aside/aside-photo.webp" type="image/webp"><img src="img/aside/aside-photo.jpg" alt=""></picture>
-										</div>
-
-
-										<div class="aside__name">
-											<div>Петр</div>
-											<div>Ковалев</div>
-										</div>
-									</div>
+		<main class="page">
+			<section class="client-page">
+				<div class="client-page__container">
+					<h1 class="client-page__title title">
+						Клиент
+					</h1>
+					<div class="client-page__body">
+						<div class="client-page__menu menu-organizer">
+							<a href="" class="menu-organizer__item">
+								<div class="menu-organizer__content">
+									<h2 class="menu-organizer__title">Загрузка ДС
+									</h2>
 								</div>
-								<ul class="aside__sidebar-list">
-									<li class="aside__sidebar-item">
-										<a href="index.html" class="aside__sidebar-link">Главная</a>
-									</li>
-									<li class="aside__sidebar-item">
-										<a href="my-messages.html" class="aside__sidebar-link">Мои сообщения</a>
-									</li>
-									<li class="aside__sidebar-item">
-										<a href="applications-for-ds.html" class="aside__sidebar-link">Заявки на ДС</a>
-									</li>
-									<li class="aside__sidebar-item">
-										<a href="my-clients.html" class="aside__sidebar-link">Мои клиенты</a>
-									</li>
-									<li class="aside__sidebar-item">
-										<a href="schedule.html" class="aside__sidebar-link">Расписание</a>
-									</li>
-									<li class="aside__sidebar-item">
-										<a href="settings.html" class="aside__sidebar-link">Настройки</a>
-									</li>
-								</ul>
-							</div>
-						</aside>
-
-						<div class="account__couch-data">
-							<div class="couch-my-clients">
-								<div class="couch-my-clients__top">
-									<div class="text-block-my-clients__image-box">
-										<div class="text-block-my-clients__image">
-											<span class="text-block-my-clients__word">К</span>
-										</div>
-									</div>
-									<div class="couch-my-clients__title title">
-										Никита Лобанов
-									</div>
+								<div class="menu-organizer__arrow _icon-arrow-down"></div>
+							</a>
+							<a href="" class="menu-organizer__item">
+								<div class="menu-organizer__content">
+									<h2 class="menu-organizer__title">Просмотр ДС
+									</h2>
 								</div>
-
-
-								<div class="couch-my-clients__content">
-
-									<div class="client__menu-list">
-										<a href="ds-loading.html" class="client__menu-link">Загрузка ДС</a>
-
-										<a href="view-ds.html" class="client__menu-link">Просмотр ДС</a>
-
-										<a href="view-customer-profile.html" class="client__menu-link">Просмотр профиля клиента</a>
-
-										<a href="feedback.html" class="client__menu-link">Обратная связь</a>
-
-										<a href="itr.html" class="client__menu-link">ИРТ</a>
-
-										<a href="itr-implementation-schedule.html" class="client__menu-link">График выполнения ИРТ</a>
-
-									</div>
+								<div class="menu-organizer__arrow _icon-arrow-down"></div>
+							</a>
+							<a href="" class="menu-organizer__item">
+								<div class="menu-organizer__content">
+									<h2 class="menu-organizer__title">Просмотр профиля клиента
+									</h2>
 								</div>
-
-							</div>
-							<div class="couch-my-сalendar">
-								<div class="couch-my-сalendar__title title">
-									Календарь занятий
+								<div class="menu-organizer__arrow _icon-arrow-down"></div>
+							</a>
+							<a href="" class="menu-organizer__item">
+								<div class="menu-organizer__content">
+									<h2 class="menu-organizer__title">Обратная связь
+									</h2>
 								</div>
-								<div class="couch-my-сalendar__content">
-									<div class="calendar-wrapper">
-										<button id="btnPrev" type="button">Предыдущий</button>
-										<button id="btnNext" type="button">Следующий</button>
-										<div id="divCal"></div>
-									</div>
+								<div class="menu-organizer__arrow _icon-arrow-down"></div>
+							</a>
+							<a href="" class="menu-organizer__item">
+								<div class="menu-organizer__content">
+									<h2 class="menu-organizer__title"> ИРТ
+									</h2>
 								</div>
-							</div>
+								<div class="menu-organizer__arrow _icon-arrow-down"></div>
+							</a>
+							<a href="" class="menu-organizer__item">
+								<div class="menu-organizer__content">
+									<h2 class="menu-organizer__title">График выполнения ИРТ</h2>
+								</div>
+								<div class="menu-organizer__arrow _icon-arrow-down"></div>
+							</a>
 						</div>
+						<div class="client-page__content"></div>
 					</div>
 				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="footer__container">
-			</div>
-		</footer>
+	</div>
+	</div>
+	</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+		</div>
+	</footer>
 	</div>
 	<!-- 
 <div id="popup" aria-hidden="true" class="popup">
@@ -201,7 +159,7 @@
 	</div>
 </div>
  -->
-	<script src="js/app.min.js?_v=20230330213101"></script>
+	<script src="js/app.min.js?_v=20230403214435"></script>
 </body>
 
 </html>
