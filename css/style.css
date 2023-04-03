@@ -1517,6 +1517,9 @@ td ._data {
   width: 100%;
 }
 
+.page-my-clients .couch-my-clients__content {
+  height: inherit;
+}
 .page-my-clients .text-block-my-clients:hover {
   background: none;
 }
