@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>График выполнения ИРТ</title>
+	<title>Загрузка ДС</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.min.css?_v=20230410151735">
@@ -93,7 +93,7 @@
 			</div>
 		</header>
 
-		<main class="page page-profile-client page-subpage">
+		<main class="page page-viduploading page-subpage">
 			<section class="client-subpage">
 				<div class="client-subpage__container">
 					<div class="client-subpage__block">
@@ -126,6 +126,7 @@
 								</div>
 							</div>
 							<div class="client-subpage__menu menu-organizer">
+
 								<!--<a href="/viduploading" class="menu-organizer__item"> -->
 								<a href="viduploading.html" class="menu-organizer__item">
 									<div class="menu-organizer__content">
@@ -174,8 +175,100 @@
 						</div>
 						<div class="client-subpage__body">
 							<div class="client-subpage__content">
-								<h1 class="client-subpage__title">График выполнения ИРТ</h1>
-								<div class="client-subpage__profile profile-subpage">
+								<h1 class="client-subpage__title">Загрузка ДС</h1>
+								<div class="content-viduploading__body loading">
+									<div class="loading__block">
+										<div class="loading__item loading__item_loading">
+											<h3 class="loading__title">Загрузка</h3>
+											<div class="loading__text">Выберите текст, аудио или видео</div>
+											<!-- родитель спойлеров-->
+											<div data-spollers data-one-spoller class="loading__accordion">
+												<!-- ячейка спойлера 2 Текст-->
+												<div class="loading__column">
+													<button type="button" data-spoller class="loading__subtitle btn loading__btn_grey _icon-arrow-down">Текст</button>
+													<div class="loading__row">
+														<form method="post" class="loading__form" id="text" enctype="multipart/form-data" action="/text_upload">
+															<div class="loading__text-form">
+																Нажмите сюда, чтобы выбрать файл, или
+																перетащите его в эту область
+															</div>
+														</form>
+														<p class="loading__text">Или вставьте текст сюда:</p>
+														<textarea class="loading__textarea" id="textarea_input" name="input"></textarea>
+														<button type="button" class="loading__btn btn" onclick="sendTextData()">Загрузить</button>
+													</div>
+												</div>
+												<!-- ячейка спойлера 1 Аудио-->
+												<div class="loading__column">
+													<button type="button" data-spoller class="loading__subtitle btn loading__btn_grey _icon-arrow-down">Аудио</button>
+													<div class="loading__row">
+														<form method="post" class="loading__form" id="audio" enctype="multipart/form-data" action="/audio_upload">
+															<div class="loading__text-form">
+																Нажмите сюда, чтобы выбрать файл, или перетащите его в эту область
+															</div>
+														</form>
+													</div>
+												</div>
+												<!-- ячейка спойлера 3 Видео-->
+												<div class="loading__column">
+													<button type="button" data-spoller class="loading__subtitle btn loading__btn_grey _icon-arrow-down">Видео</button>
+													<div class="loading__row">
+														<form method="post" class="loading__form" id="video" enctype="multipart/form-data" action="/viduploading">
+															<!--<label>Загрузить видео для авторазбора</label>
+																		  <input type="file" id="file" name="file"
+																		  accept="video/*">
+																		  <button id="submit" type="submit" name="submit">Подтвердить</button>-->
+															<div class="loading__text-form">
+																Нажмите сюда, чтобы выбрать файл, или перетащите его в эту область
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="loading__item loading__item_launch">
+											<h3 class="loading__title">Запуск</h3>
+											<div class="loading__btns">
+												<div class="loading__btn01">
+													<div class="loading__text-btn">Запустить с текстом из БД</div>
+													<button type="button" class="loading__btn   btn" onclick="triggerDatabaseQueue()">Запустить</button>
+												</div>
+												<div class="loading__btn02">
+													<div class="loading__text-btn">Запустить с данными диагностик</div>
+													<button type="button" class="loading__btn loading__btn_green btn">Запустить</button>
+												</div>
+											</div>
+										</div>
+										<div class="loading__item loading__item_stages">
+											<h3 class="loading__title">Этапы</h3>
+											<div class="loading__stages">
+												<div class="loading__stage">
+													<span>1</span>
+													В очереди
+												</div>
+												<ul class="list-group" id="queued"></ul>
+												<div class="loading__stage">
+													<span>2</span>
+													Выделение аудио
+												</div>
+												<ul class="list-group" id="split"></ul>
+												<div class="loading__stage">
+													<span>3</span>
+													Транскрипция
+												</div>
+												<ul class="list-group" id="trans"></ul>
+												<div class="loading__stage">
+													<span>4</span>
+													Разбор аудио
+												</div>
+												<div class="loading__stage">
+													<span>5</span>
+													Готово
+												</div>
+												<ul class="list-group" id="done"></ul>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

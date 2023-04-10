@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Личный кабинет коуча</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230410151735">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Reset CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css?_v=20230410151735">
+	<!-- Calendar Style CSS -->
+	<link rel="stylesheet" href="scr/styles.css?_v=20230410151735">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230410151735" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230410151735" rel="stylesheet">
+	<link rel="stylesheet" href="dhtmlxscheduler_material.css?_v=20230410151735" type="text/css" charset="utf-8">
+
+</head>
+
+<body>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?_v=20230410151735">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<a href="couch.html" class="header__logo">
+						<!--  <a href="/couch" class="header__logo"> -->
+						<img src="img/header/logo-header.svg" alt="">
+					</a>
+					<div class="header_menu menu" data-da=".header__profile,991.98">
+						<button type="button" class="menu__icon icon-menu">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item menu__item_logo">
+									<!--  <a href="/couch" class="header__logo"> -->
+									<a href="couch.html" class="header__logo">
+										<img src="img/header/logo-header.svg" alt="">
+									</a>
+								</li>
+								<li class="menu__item">
+									<!--<a href="/couch" class="menu__link">Главная</a> -->
+									<a href="couch.html" class="menu__link">Главная</a>
+								</li>
+								<li class="menu__item">
+									<!--<a href="/my_profile" class="menu__link">Мой профиль</a> -->
+									<a href="my_profile.html" class="menu__link">Мой профиль</a>
+								</li>
+								<li class="menu__item">
+									<!--<a href="/my_clients" class="menu__link">Мои клиенты</a> -->
+									<a href="my_clients.html" class="menu__link">Мои клиенты</a>
+								</li>
+								<li class="menu__item">
+									<!--<a href="/my_articles" class="menu__link">Мои статьи</a> -->
+									<a href="my_articles.html" class="menu__link">Мои статьи</a>
+								</li>
+								<li class="menu__item">
+									<!--<a href="/my_news" class="menu__link">Мои новости</a> -->
+									<a href="my_news.html" class="menu__link">Мои новости</a>
+								</li>
+								<li class="menu__item">
+									<!--<a href="/my_messages" class="menu__link">Мои сообщения</a> -->
+									<a href="my_messages.html" class="menu__link">Мои сообщения</a>
+								</li>
+								<li class="menu__item">
+									<!--<a href="/my_organizer" class="menu__link">Мой органайзер</a> -->
+									<a href="my_organizer.html" class="menu__link">Мой органайзер</a>
+								</li>
+								<li class="menu__item menu__item_exit">
+									<!--<a href="/login" class="menu__link">Выйти</a> -->
+									<a href="login.html" class="menu__link">Выйти</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__profile">
+						<a href="#" data-popup="#popup-search" class="header__button _icon-search"></a>
+						<a class="header__bell _icon-bell" href=""></a>
+						<div class="header__image-box">
+							<!-- <a href="/my_profile" class="header__image"> -->
+							<a href="my_profile.html" class="header__image">
+								<span class="header__word">К</span>
+								<span class="header__word_hidden">Изменить фото</span>
+							</a>
+						</div>
+						<!-- <a class="header__exit _icon-exit" href="/login"></a> -->
+						<a class="header__exit _icon-exit" href="login.html"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="profile-main">
+				<div class="profile-main__container">
+					<div class="profile-main__body">
+						<div class="profile-main__couch  couch-profile">
+							<div class="couch-profile__image-box">
+								<picture><source srcset="img/aside/aside-photo.webp" type="image/webp"><img src="img/aside/aside-photo.jpg" alt=""></picture>
+							</div>
+							<div class="couch-profile__block">
+								<div class="couch-profile__name">
+									<!-- <div>{{data[0][1]}}</div> -->
+									<div>Ковалев</div>
+									<!-- <div>{{data[0][2]}}</div> -->
+									<div>Петр</div>
+									<!-- <div>{{data[0][3]}}</div> -->
+									<div>Александрович</div>
+								</div>
+								<img class="couch-profile__line" src="img/elements/choice-bg-2.svg" alt="">
+								<div class="couch-profile__profession">Бизнес-коуч</div>
+								<div class="couch-profile__location">Санкт-Петербург, Россия</div>
+							</div>
+						</div>
+						<div class="profile-main__rating rating">
+							<div class="rating__item">
+								<div class="rating__image">
+									<img src="img/rating/profile.svg" alt="">
+								</div>
+								<div class="rating__number">100+</div>
+								<div class="rating__text">Клиентов</div>
+							</div>
+							<div class="rating__item">
+								<div class="rating__image">
+									<img src="img/rating/graph.svg" alt="">
+								</div>
+								<div class="rating__number">9+</div>
+								<div class="rating__text">Лет работы</div>
+							</div>
+							<div class="rating__item">
+								<div class="rating__image">
+									<img src="img/rating/star.svg" alt="">
+								</div>
+								<div class="rating__number">4.8</div>
+								<div class="rating__text">Рейтинг</div>
+							</div>
+							<div class="rating__item">
+								<div class="rating__image">
+									<img src="img/rating/book.svg" alt="">
+								</div>
+								<div class="rating__number">40</div>
+								<div class="rating__text">Публикаций</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="account-main">
+				<div class="account-main__container">
+					<div class="account-main__body">
+						<div class="account-main__couch-data">
+							<!-- мои клиенты - лк коуча главная страница -->
+							<div class="couch-my-clients">
+								<h2 class="couch-my-clients__title title">
+									Мои клиенты
+								</h2>
+								<div class="couch-my-clients__content">
+									<form method="post" class="couch-my-clients__form">
+										<!-- оставить только 1 блок  button-->
+										<!--{% for user in users %}-->
+										<!-- <button class="couch-my-clients__block-text text-block-my-clients" name="link" value="{{user[4]}}"> -->
+										<button class="couch-my-clients__block-text text-block-my-clients" name="link" value="{{user[4]}}">
+											<div class="text-block-my-clients__client">
+												<div class="text-block-my-clients__image-box">
+													<div class="text-block-my-clients__image">
+														<!-- <span class="text-block-my-clients__word">{{user[0][0]}}</span> -->
+														<span class="text-block-my-clients__word">А</span>
+													</div>
+												</div>
+												<!-- <div class="text-block-my-clients__title">{{user[0]+ " " + user[2]}}</div> -->
+												<div class="text-block-my-clients__title">Анна Воронина</div>
+											</div>
+											<div class="text-block-my-clients__right">
+												<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+											</div>
+										</button>
+										<!--  {% end %} -->
+										<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+											<div class="text-block-my-clients__client">
+												<div class="text-block-my-clients__image-box">
+													<div class="text-block-my-clients__image">
+														<span class="text-block-my-clients__word">А</span>
+													</div>
+												</div>
+												<div class="text-block-my-clients__title">Антон Уфимцев</div>
+											</div>
+											<div class="text-block-my-clients__right">
+												<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+											</div>
+										</a>
+										<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+											<div class="text-block-my-clients__client">
+												<div class="text-block-my-clients__image-box">
+													<div class="text-block-my-clients__image">
+														<span class="text-block-my-clients__word">Л</span>
+													</div>
+												</div>
+												<div class="text-block-my-clients__title">Лейла Багдади</div>
+											</div>
+											<div class="text-block-my-clients__right">
+												<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+											</div>
+										</a>
+										<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+											<div class="text-block-my-clients__client">
+												<div class="text-block-my-clients__image-box">
+													<div class="text-block-my-clients__image">
+														<span class="text-block-my-clients__word">Н</span>
+													</div>
+												</div>
+												<div class="text-block-my-clients__title">Никита Лобанов</div>
+											</div>
+											<div class="text-block-my-clients__right">
+												<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+											</div>
+										</a>
+										<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+											<div class="text-block-my-clients__client">
+												<div class="text-block-my-clients__image-box">
+													<div class="text-block-my-clients__image">
+														<span class="text-block-my-clients__word">Т</span>
+													</div>
+												</div>
+												<div class="text-block-my-clients__title">Татьяна Шелковникова</div>
+											</div>
+											<div class="text-block-my-clients__right">
+												<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+											</div>
+										</a>
+									</form>
+									<!--  <a href="/my_clients" class="couch-my-clients__link _icon-arrow-up"></a> -->
+									<a href="my_clients.html" class="couch-my-clients__link _icon-arrow-up">
+										Все клиенты
+									</a>
+								</div>
+							</div>
+							<div class="couch-my-сalendar">
+								<h2 class="couch-my-сalendar__title title">
+									Мой календарь
+								</h2>
+								<div class="couch-my-сalendar__content">
+									<div class="calendar-wrapper">
+										<button id="btnPrev" type="button">Предыдущий</button>
+										<button id="btnNext" type="button">Следующий</button>
+										<div id="divCal"></div>
+									</div>
+								</div>
+							</div>
+							<div class="couch-my-event">
+								<h2 class="couch-my-event__title title">
+									События
+								</h2>
+								<div class="couch-my-event__content">
+									<div class="couch-my-event__item">
+										<div class="couch-my-event__left">
+											<div class="couch-my-event__text">Встреча</div>
+											<div class="couch-my-event__data">15.03.2023</div>
+										</div>
+										<div class="couch-my-event__time">14:00</div>
+									</div>
+									<div class="couch-my-event__item">
+										<div class="couch-my-event__left">
+											<div class="couch-my-event__text">Встреча</div>
+											<div class="couch-my-event__data">15.03.2023</div>
+										</div>
+										<div class="couch-my-event__time">14:00</div>
+									</div>
+									<div class="couch-my-event__item">
+										<div class="couch-my-event__left">
+											<div class="couch-my-event__text">Встреча</div>
+											<div class="couch-my-event__data">15.03.2023</div>
+										</div>
+										<div class="couch-my-event__time">14:00</div>
+									</div>
+									<div class="couch-my-event__item">
+										<div class="couch-my-event__left">
+											<div class="couch-my-event__text">Встреча</div>
+											<div class="couch-my-event__data">15.03.2023</div>
+										</div>
+										<div class="couch-my-event__time">14:00</div>
+									</div>
+									<div class="couch-my-event__item">
+										<div class="couch-my-event__left">
+											<div class="couch-my-event__text">Встреча</div>
+											<div class="couch-my-event__data">15.03.2023</div>
+										</div>
+										<div class="couch-my-event__time">14:00</div>
+									</div>
+									<div class="couch-my-event__item">
+										<div class="couch-my-event__left">
+											<div class="couch-my-event__text">Встреча</div>
+											<div class="couch-my-event__data">15.03.2023</div>
+										</div>
+										<div class="couch-my-event__time">14:00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="articles-main">
+				<div class="articles-main__container">
+					<h3 class="articles-main__title title">
+						Мои статьи
+					</h3>
+					<div class="articles-main__body">
+						<div class="articles-main__articles">
+							<ul class="articles-main__list">
+								<li class="articles-main__item">
+									<a href="" class="articles-main__link">
+										<picture><source srcset="img/articles/articles01.webp" type="image/webp"><img class="articles-main__image -ibg" src="img/articles/articles01.jpg" alt=""></picture>
+										<div class="articles-main__content">
+											<div class="articles-main__data">03.04.2023</div>
+											<h2 class="articles-main__title">ЧТО ТАКОЕ КОУЧИНГ?</h2>
+											<div class="articles-main__rubrics">
+												<div class="articles-main__rubric">
+													Профессиональный коучинг
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="articles-main__item">
+									<a href="" class="articles-main__link">
+										<picture><source srcset="img/articles/articles01.webp" type="image/webp"><img class="articles-main__image -ibg" src="img/articles/articles01.jpg" alt=""></picture>
+										<div class="articles-main__content">
+											<div class="articles-main__data">03.04.2023</div>
+											<h2 class="articles-main__title">ЧТО ТАКОЕ КОУЧИНГ?</h2>
+											<div class="articles-main__rubrics">
+												<div class="articles-main__rubric">
+													Профессиональный коучинг
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="articles-main__item">
+									<a href="" class="articles-main__link">
+										<picture><source srcset="img/articles/articles01.webp" type="image/webp"><img class="articles-main__image -ibg" src="img/articles/articles01.jpg" alt=""></picture>
+										<div class="articles-main__content">
+											<div class="articles-main__data">03.04.2023</div>
+											<h2 class="articles-main__title">ЧТО ТАКОЕ КОУЧИНГ?</h2>
+											<div class="articles-main__rubrics">
+												<div class="articles-main__rubric">
+													Профессиональный коучинг
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<a href="my-articles.html" class="articles-main__links _icon-arrow-up">
+								Все статьи
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="news-main">
+				<div class="news-main__container">
+					<h3 class="news-main__title title">
+						Мои новости
+					</h3>
+					<div class="news-main__body">
+						<div class="news-main__news news">
+							<a href="" class="news-main__item">
+								<div class="news-main__content">
+									<div class="news-main__data">03.04.2023</div>
+									<h2 class="news-main__subtitle">важная новость для пользовалетей</h2>
+								</div>
+								<div class="news-main__arrow _icon-arrow-down"></div>
+							</a>
+							<a href="" class="news-main__item">
+								<div class="news-main__content">
+									<div class="news-main__data">03.04.2023</div>
+									<h2 class="news-main__subtitle">обновление тарифной сетки</h2>
+								</div>
+								<div class="news-main__arrow _icon-arrow-down"></div>
+							</a>
+							<a href="" class="news-main__item">
+								<div class="news-main__content">
+									<div class="news-main__data">03.04.2023</div>
+									<h2 class="news-main__subtitle">Изменение в приложении к договору</h2>
+								</div>
+								<div class="news-main__arrow _icon-arrow-down"></div>
+							</a>
+						</div>
+						<a href="my-news.html" class="news-main__link _icon-arrow-up">
+							Все новости
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="popup-search" aria-hidden="true" class="popup-search popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<form action="#" method="get" class="popup__form" autocomplete="off">
+					<input placeholder="Поиск" type="text" name="text" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" maxlength="255" class="popup__input">
+					<button class="popup__button btn" type="submit">
+						Найти
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230410151735"></script>
+</body>
+
+</html>
