@@ -5,21 +5,21 @@
 	<title>Личный кабинет коуча</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230410151735">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230412154638">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Reset CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css?_v=20230410151735">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css?_v=20230412154638">
 	<!-- Calendar Style CSS -->
-	<link rel="stylesheet" href="scr/styles.css?_v=20230410151735">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230410151735" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230410151735" rel="stylesheet">
-	<link rel="stylesheet" href="dhtmlxscheduler_material.css?_v=20230410151735" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="scr/styles.css?_v=20230412154638">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230412154638" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230412154638" rel="stylesheet">
+	<link rel="stylesheet" href="dhtmlxscheduler_material.css?_v=20230412154638" type="text/css" charset="utf-8">
 
 </head>
 
 <body>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?_v=20230410151735">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?_v=20230412154638">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -46,10 +46,7 @@
 									<!--<a href="/couch" class="menu__link">Главная</a> -->
 									<a href="couch.html" class="menu__link">Главная</a>
 								</li>
-								<li class="menu__item">
-									<!--<a href="/my_profile" class="menu__link">Мой профиль</a> -->
-									<a href="my_profile.html" class="menu__link">Мой профиль</a>
-								</li>
+
 								<li class="menu__item">
 									<!--<a href="/my_clients" class="menu__link">Мои клиенты</a> -->
 									<a href="my_clients.html" class="menu__link">Мои клиенты</a>
@@ -69,6 +66,10 @@
 								<li class="menu__item">
 									<!--<a href="/my_organizer" class="menu__link">Мой органайзер</a> -->
 									<a href="my_organizer.html" class="menu__link">Мой органайзер</a>
+								</li>
+								<li class="menu__item">
+									<!--<a href="/my_profile" class="menu__link">Мой профиль</a> -->
+									<a href="my_profile.html" class="menu__link">Мой профиль</a>
 								</li>
 								<li class="menu__item menu__item_exit">
 									<!--<a href="/login" class="menu__link">Выйти</a> -->
@@ -94,61 +95,7 @@
 			</div>
 		</header>
 
-		<main class="page">
-			<div class="profile-main">
-				<div class="profile-main__container">
-					<div class="profile-main__body">
-						<div class="profile-main__couch  couch-profile">
-							<div class="couch-profile__image-box">
-								<picture><source srcset="img/aside/aside-photo.webp" type="image/webp"><img src="img/aside/aside-photo.jpg" alt=""></picture>
-							</div>
-							<div class="couch-profile__block">
-								<div class="couch-profile__name">
-									<!-- <div>{{data[0][1]}}</div> -->
-									<div>Ковалев</div>
-									<!-- <div>{{data[0][2]}}</div> -->
-									<div>Петр</div>
-									<!-- <div>{{data[0][3]}}</div> -->
-									<div>Александрович</div>
-								</div>
-								<img class="couch-profile__line" src="img/elements/choice-bg-2.svg" alt="">
-								<div class="couch-profile__profession">Бизнес-коуч</div>
-								<div class="couch-profile__location">Санкт-Петербург, Россия</div>
-							</div>
-						</div>
-						<div class="profile-main__rating rating">
-							<div class="rating__item">
-								<div class="rating__image">
-									<img src="img/rating/profile.svg" alt="">
-								</div>
-								<div class="rating__number">100+</div>
-								<div class="rating__text">Клиентов</div>
-							</div>
-							<div class="rating__item">
-								<div class="rating__image">
-									<img src="img/rating/graph.svg" alt="">
-								</div>
-								<div class="rating__number">9+</div>
-								<div class="rating__text">Лет работы</div>
-							</div>
-							<div class="rating__item">
-								<div class="rating__image">
-									<img src="img/rating/star.svg" alt="">
-								</div>
-								<div class="rating__number">4.8</div>
-								<div class="rating__text">Рейтинг</div>
-							</div>
-							<div class="rating__item">
-								<div class="rating__image">
-									<img src="img/rating/book.svg" alt="">
-								</div>
-								<div class="rating__number">40</div>
-								<div class="rating__text">Публикаций</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<main class="page page-couch">
 			<section class="account-main">
 				<div class="account-main__container">
 					<div class="account-main__body">
@@ -164,18 +111,20 @@
 										<!--{% for user in users %}-->
 										<!-- <button class="couch-my-clients__block-text text-block-my-clients" name="link" value="{{user[4]}}"> -->
 										<!-- <button class="couch-my-clients__block-text text-block-my-clients" name="link" value="{{user[4]}}">
-											<div class="text-block-my-clients__client">
-												<div class="text-block-my-clients__image-box">
-													<div class="text-block-my-clients__image">
-														<span class="text-block-my-clients__word">{{user[0][0]}}</span>
-													</div>
-												</div>
-												<div class="text-block-my-clients__title">{{user[0]+ " " + user[2]}}</div>
-											</div>
-											<div class="text-block-my-clients__right">
-												<div class="text-block-my-clients__btn _icon-arrow-down"></div>
-											</div>
-										</button> -->
+                                                <div class="text-block-my-clients__client">
+                                                    <div class="text-block-my-clients__image-box">
+                                                        <div class="text-block-my-clients__image"> -->
+										<!-- <span class="text-block-my-clients__word">{{user[0][0]}}</span> -->
+										<!--    <span class="text-block-my-clients__word">А</span>
+                                                        </div>
+                                                    </div> -->
+										<!-- <div class="text-block-my-clients__title">{{user[0]+ " " + user[2]}}</div> -->
+										<!--  <div class="text-block-my-clients__title">Анна Воронина</div>
+                                                </div>
+                                                <div class="text-block-my-clients__right">
+                                                    <div class="text-block-my-clients__btn _icon-arrow-down"></div>
+                                                </div>
+                                            </button> -->
 										<!--  {% end %} -->
 										<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
 											<div class="text-block-my-clients__client">
@@ -250,58 +199,84 @@
 							</div>
 							<div class="couch-my-event">
 								<h2 class="couch-my-event__title title">
-									События
+									Журнал сессий
 								</h2>
-								<div class="couch-my-event__content">
-									<div class="couch-my-event__item">
-										<div class="couch-my-event__left">
-											<div class="couch-my-event__text">Встреча</div>
-											<div class="couch-my-event__data">15.03.2023</div>
+								<div class="couch-my-event__content couch-session">
+									<div class="couch-session__item">
+										<div class="couch-session__block-time">
+											<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+											<div class="couch-session__time">14:00-15:00</div>
 										</div>
-										<div class="couch-my-event__time">14:00</div>
+										<div class="couch-session__text">Иван Петров</div>
+										<div data-spollers class="couch-session__status">
+											<div class="couch-session__accordion">
+												<button class="couch-session__button" type="button" data-spoller>
+													<img src="img/icons/time-green.svg" alt="">
+													В работе
+												</button>
+												<div class="couch-session__sublist">
+													<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+														<img src="img/icons/work.svg" alt="">
+														<div class="couch-session__sublist-text">
+															Подтвержден
+														</div>
+													</a>
+													<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+														<img src="img/icons/check.svg" alt="">
+														<div class="couch-session__sublist-text">
+															Выполнен
+														</div>
+													</a>
+													<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+														<img src="img/icons/stop.svg" alt="">
+														<div class="couch-session__sublist-text">
+															Отклонить
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="couch-my-event__item">
-										<div class="couch-my-event__left">
-											<div class="couch-my-event__text">Встреча</div>
-											<div class="couch-my-event__data">15.03.2023</div>
+									<div class="couch-session__item">
+										<div class="couch-session__block-time">
+											<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+											<div class="couch-session__time">14:00-15:00</div>
 										</div>
-										<div class="couch-my-event__time">14:00</div>
-									</div>
-									<div class="couch-my-event__item">
-										<div class="couch-my-event__left">
-											<div class="couch-my-event__text">Встреча</div>
-											<div class="couch-my-event__data">15.03.2023</div>
+										<div class="couch-session__text">Иван Петров</div>
+										<div data-spollers class="couch-session__status">
+											<div class="couch-session__accordion">
+												<button class="couch-session__button" type="button" data-spoller>
+													<img src="img/icons/time-green.svg" alt="">
+													В работе
+												</button>
+												<div class="couch-session__sublist">
+													<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+														<img src="img/icons/work.svg" alt="">
+														<div class="couch-session__sublist-text">
+															Подтвержден
+														</div>
+													</a>
+													<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+														<img src="img/icons/check.svg" alt="">
+														<div class="couch-session__sublist-text">
+															Выполнен
+														</div>
+													</a>
+													<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+														<img src="img/icons/stop.svg" alt="">
+														<div class="couch-session__sublist-text">
+															Отклонить
+														</div>
+													</a>
+												</div>
+											</div>
 										</div>
-										<div class="couch-my-event__time">14:00</div>
-									</div>
-									<div class="couch-my-event__item">
-										<div class="couch-my-event__left">
-											<div class="couch-my-event__text">Встреча</div>
-											<div class="couch-my-event__data">15.03.2023</div>
-										</div>
-										<div class="couch-my-event__time">14:00</div>
-									</div>
-									<div class="couch-my-event__item">
-										<div class="couch-my-event__left">
-											<div class="couch-my-event__text">Встреча</div>
-											<div class="couch-my-event__data">15.03.2023</div>
-										</div>
-										<div class="couch-my-event__time">14:00</div>
-									</div>
-									<div class="couch-my-event__item">
-										<div class="couch-my-event__left">
-											<div class="couch-my-event__text">Встреча</div>
-											<div class="couch-my-event__data">15.03.2023</div>
-										</div>
-										<div class="couch-my-event__time">14:00</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 			</section>
-
 			<section class="articles-main">
 				<div class="articles-main__container">
 					<h3 class="articles-main__title title">
@@ -414,7 +389,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230410151735"></script>
+	<script src="js/app.min.js?_v=20230412154638"></script>
 </body>
 
 </html>

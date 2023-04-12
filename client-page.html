@@ -5,16 +5,16 @@
 	<title>Клиент</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230410151735">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230412154638">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Reset CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css?_v=20230410151735">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css?_v=20230412154638">
 	<!-- Calendar Style CSS -->
-	<link rel="stylesheet" href="scr/styles.css?_v=20230410151735">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230410151735" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230410151735" rel="stylesheet">
-	<link rel="stylesheet" href="dhtmlxscheduler_material.css?_v=20230410151735" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="scr/styles.css?_v=20230412154638">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230412154638" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230412154638" rel="stylesheet">
+	<link rel="stylesheet" href="dhtmlxscheduler_material.css?_v=20230412154638" type="text/css" charset="utf-8">
 
 </head>
 
@@ -45,10 +45,7 @@
 									<!--<a href="/couch" class="menu__link">Главная</a> -->
 									<a href="couch.html" class="menu__link">Главная</a>
 								</li>
-								<li class="menu__item">
-									<!--<a href="/my_profile" class="menu__link">Мой профиль</a> -->
-									<a href="my_profile.html" class="menu__link">Мой профиль</a>
-								</li>
+
 								<li class="menu__item">
 									<!--<a href="/my_clients" class="menu__link">Мои клиенты</a> -->
 									<a href="my_clients.html" class="menu__link">Мои клиенты</a>
@@ -68,6 +65,10 @@
 								<li class="menu__item">
 									<!--<a href="/my_organizer" class="menu__link">Мой органайзер</a> -->
 									<a href="my_organizer.html" class="menu__link">Мой органайзер</a>
+								</li>
+								<li class="menu__item">
+									<!--<a href="/my_profile" class="menu__link">Мой профиль</a> -->
+									<a href="my_profile.html" class="menu__link">Мой профиль</a>
 								</li>
 								<li class="menu__item menu__item_exit">
 									<!--<a href="/login" class="menu__link">Выйти</a> -->
@@ -120,7 +121,7 @@
 								Добавить ДС
 								<img src="img/icons/plus-circle.svg" alt="">
 							</a>
-							<a class="client-page__btn client-page__btn_green btn" href="https://meet.jit.si/neuronircl13co0">Подключиться к сессии</a>
+							<a class="client-page__btn  btn" href="https://meet.jit.si/neuronircl13co0">Подключиться к сессии</a>
 						</div>
 					</div>
 					<div class="client-page__body">
@@ -128,21 +129,14 @@
 							<!--<a href="/viduploading" class="menu-organizer__item"> -->
 							<a href="viduploading.html" class="menu-organizer__item">
 								<div class="menu-organizer__content">
-									<h2 class="menu-organizer__title">Загрузка ДС</h2>
+									<h2 class="menu-organizer__title">Аналитика ДС</h2>
 								</div>
 								<div class="menu-organizer__arrow _icon-arrow-down"></div>
 							</a>
 							<!--<a href="/page" class="menu-organizer__item"> -->
 							<a href="page.html" class="menu-organizer__item">
 								<div class="menu-organizer__content">
-									<h2 class="menu-organizer__title">Просмотр ДС</h2>
-								</div>
-								<div class="menu-organizer__arrow _icon-arrow-down"></div>
-							</a>
-							<!--<a href="/view_customer_profile" class="menu-organizer__item"> -->
-							<a href="view_customer_profile.html" class="menu-organizer__item">
-								<div class="menu-organizer__content">
-									<h2 class="menu-organizer__title">Просмотр профиля клиента</h2>
+									<h2 class="menu-organizer__title">Разбор ДС</h2>
 								</div>
 								<div class="menu-organizer__arrow _icon-arrow-down"></div>
 							</a>
@@ -150,7 +144,7 @@
 							<a href="feedback.html" class="menu-organizer__item">
 								<div class="menu-organizer__content">
 									<h2 class="menu-organizer__title">
-										Обратная связь
+										ОС Паттерны
 									</h2>
 								</div>
 								<div class="menu-organizer__arrow _icon-arrow-down"></div>
@@ -158,14 +152,14 @@
 							<!--<a href="/preanalysis" class="menu-organizer__item"> -->
 							<a href="itr.html" class="menu-organizer__item">
 								<div class="menu-organizer__content">
-									<h2 class="menu-organizer__title">ИРТ</h2>
+									<h2 class="menu-organizer__title">ИТР</h2>
 								</div>
 								<div class="menu-organizer__arrow _icon-arrow-down"></div>
 							</a>
-							<!--<a href="/preanalysis" class="menu-organizer__item"> -->
-							<a href="itr-implementation-schedule.html" class="menu-organizer__item">
+							<!--<a href="/view_customer_profile" class="menu-organizer__item"> -->
+							<a href="view_customer_profile.html" class="menu-organizer__item">
 								<div class="menu-organizer__content">
-									<h2 class="menu-organizer__title">График выполнения ИРТ</h2>
+									<h2 class="menu-organizer__title">Профиль</h2>
 								</div>
 								<div class="menu-organizer__arrow _icon-arrow-down"></div>
 							</a>
@@ -174,30 +168,26 @@
 							<div class="client-content__left">
 								<a href="viduploading.html" class="client-content__item">
 									<img src="img/person/download.svg" alt="">
-									<span>Загрузка ДС</span>
+									<span>Аналитика ДС</span>
 								</a>
 								<a href="page.html" class="client-content__item">
 									<img src="img/person/download.svg" alt="">
-									<span>Просмотр ДС</span>
+									<span>Разбор ДС</span>
 								</a>
-								<a href=" view_customer_profile.html" class="client-content__item">
-									<img src="img/person/eye.svg" alt="">
-									<span>Просмотр профиля клиента</span>
-								</a>
+
 								<a href="feedback.html" class="client-content__item">
 									<img src="img/person/feedback.svg" alt="">
-									<span>Обратная связь</span>
+									<span>ОС Паттерны</span>
 								</a>
 								<a href="itr.html" class="client-content__item">
 									<img src="img/person/atom.svg" alt="">
-									<span>ИРТ</span>
+									<span>ИТР</span>
 								</a>
-								<a href="itr-implementation-schedule.html" class="client-content__item">
-									<img src="img/person/chart-line.svg" alt="">
-									<span>График выполнения ИРТ</span>
+								<a href=" view_customer_profile.html" class="client-content__item">
+									<img src="img/person/eye.svg" alt="">
+									<span>Профиль</span>
 								</a>
 							</div>
-
 						</div>
 					</div>
 				</div>
@@ -221,7 +211,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230410151735"></script>
+	<script src="js/app.min.js?_v=20230412154638"></script>
 </body>
 
 </html>

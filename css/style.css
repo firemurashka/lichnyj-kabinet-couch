@@ -457,14 +457,16 @@ body::after {
   justify-content: center;
   padding: 10px;
   width: 150px;
-  background: #0386ff;
+  background: #06ea6f;
   border-radius: 5px;
-  color: #fff;
-  transition: all 0.3s ease 0s;
+  color: #150931;
+  transition: all 0.3s ease;
   min-height: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .btn:hover {
-  background: rgb(0, 116, 223);
+  background: #ff008a;
 }
 
 /* opacity: 0;
@@ -598,7 +600,7 @@ animation: ani 0.5s forwards;
   transition: all 0.3s ease 0s;
 }
 .header__button:hover::before {
-  color: #0386ff;
+  color: #06ea6f;
 }
 @media (max-width: 29.99875em) {
   .header__image-box {
@@ -658,7 +660,7 @@ animation: ani 0.5s forwards;
   transition: all 0.3s ease 0s;
 }
 .header__exit:hover::before {
-  color: #0386ff;
+  color: #06ea6f;
 }
 @media (max-width: 29.99875em) {
   .header__exit {
@@ -675,7 +677,7 @@ animation: ani 0.5s forwards;
   transition: all 0.3s ease 0s;
 }
 .header__bell:hover::before {
-  color: #0386ff;
+  color: #06ea6f;
 }
 
 @media (max-width: 61.99875em) {
@@ -790,7 +792,7 @@ animation: ani 0.5s forwards;
   font-weight: 500;
 }
 .menu__link:hover {
-  color: #0386ff;
+  color: #06ea6f;
 }
 
 .icon-menu {
@@ -835,6 +837,10 @@ animation: ani 0.5s forwards;
     bottom: calc(50% - 0.0625rem);
     transform: rotate(45deg);
   }
+}
+
+.page-couch .title {
+  margin: 0px 0px 20px 0px;
 }
 
 .profile-main {
@@ -1241,6 +1247,93 @@ animation: ani 0.5s forwards;
   line-height: 150%;
   font-size: 16px;
   color: #0386ff;
+}
+
+.couch-session {
+  background: #FFFFFF;
+  border: 1px solid #E7E3D4;
+  box-shadow: 2px 8px 16px rgba(194, 198, 208, 0.06);
+  border-radius: 5px;
+  padding: 10px;
+  height: 400px;
+}
+.couch-session__item {
+  display: flex;
+  padding: 5px;
+  gap: 20px;
+  align-items: center;
+}
+.couch-session__item:not(:last-child) {
+  border-bottom: 1px solid #E7E3D4;
+}
+.couch-session__button {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-align: left;
+  background: rgba(6, 234, 111, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  min-width: 120px;
+}
+.couch-session__button img {
+  width: 20px;
+  height: 20px;
+}
+.couch-session__text {
+  line-height: 120%;
+  font-weight: 500;
+  font-size: 16px;
+}
+.couch-session__data {
+  margin: 0px 0px 10px 0px;
+  line-height: 150%;
+}
+.couch-session__time {
+  line-height: 150%;
+  color: #828185;
+}
+.couch-session__status {
+  position: relative;
+}
+.couch-session__sublist {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  margin: 5px 0;
+  background-color: #fff;
+  border: 1px solid #E7E3D4;
+  z-index: 10;
+}
+.couch-session__sublist-item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-align: left;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  min-width: 120px;
+  transition: all 0.3s ease 0s;
+}
+.couch-session__sublist-item:not(:last-child) {
+  margin: 0px 0px 5px 0px;
+}
+.couch-session__sublist-item img {
+  width: 20px;
+  height: 20px;
+}
+.couch-session__sublist-item:hover {
+  background-color: #F9F7EF;
+}
+.couch-session img {
+  width: 20px;
+  height: 20px;
 }
 
 .calendar-wrapper {
@@ -1715,9 +1808,9 @@ td ._data {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.32);
 }
 .client-content__item img {
-  width: 40px;
-  height: 40px;
-  filter: invert(40%) sepia(37%) saturate(5461%) hue-rotate(192deg) brightness(99%) contrast(110%);
+  width: 30px;
+  height: 30px;
+  filter: invert(31%) sepia(95%) saturate(7139%) hue-rotate(320deg) brightness(103%) contrast(114%);
 }
 .profile-client {
   display: flex;
@@ -2082,12 +2175,6 @@ td ._data {
 .loading__btn_grey:hover {
   background-color: #F9F7EF;
 }
-.loading__btn_green {
-  background-color: #06ea6f;
-}
-.loading__btn_green:hover {
-  background-color: rgb(2, 214, 100);
-}
 .loading__btn01 {
   background: #FFFFFF;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -2323,16 +2410,11 @@ td ._data {
 .page-my-clients .couch-my-clients {
   width: 100%;
 }
-
-.page-schedule .couch-my-сalendar {
+.page-my-clients .page-schedule .couch-my-сalendar {
   width: 100%;
 }
-
 .page-my-clients .couch-my-clients__content {
   height: inherit;
-}
-.page-my-clients .text-block-my-clients:hover {
-  background: none;
 }
 .page-my-clients .text-block-my-clients {
   padding: 20px 10px;
