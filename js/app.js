@@ -4176,6 +4176,10 @@
     function getId(id) {
         return document.getElementById(id);
     }
+    var els = document.querySelectorAll("a");
+    for (var i = 0; i < els.length; i++) els[i].addEventListener("click", (function() {
+        if (this.getAttribute("data-href2")) window.open(this.getAttribute("data-href2"));
+    }), false);
     window["FLS"] = true;
     isWebp();
     menuInit();

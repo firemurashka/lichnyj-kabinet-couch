@@ -2842,7 +2842,7 @@ td ._data {
   display: flex;
   gap: 10px;
 }
-.articles __rubric {
+.articles__rubric {
   background: #F9F7EF;
   border-radius: 5px;
   font-weight: 500;
