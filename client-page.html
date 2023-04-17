@@ -5,16 +5,11 @@
 	<title>Клиент</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230412154638">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230417140832">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Reset CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css?_v=20230412154638">
-	<!-- Calendar Style CSS -->
-	<link rel="stylesheet" href="scr/styles.css?_v=20230412154638">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230412154638" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230412154638" rel="stylesheet">
-	<link rel="stylesheet" href="dhtmlxscheduler_material.css?_v=20230412154638" type="text/css" charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230417140832" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230417140832" rel="stylesheet">
 
 </head>
 
@@ -98,11 +93,13 @@
 			<section class="client-page">
 				<div class="client-page__container">
 					<div class="client-page__top">
+						<!-- клиент -->
 						<a href="client-page.html" class="client-page__profile profile-client">
 							<div class="profile-client__image">
 								<picture><source srcset="img/client/client01.webp" type="image/webp"><img src="img/client/client01.jpg" alt=""></picture>
 							</div>
 							<div class="profile-client__block">
+								<div class="profile-client__subtitle">Клиент</div>
 								<!-- <div class="profile-client__title">{{user[0]+ " " + user[2]}}</div> -->
 								<div class="profile-client__title">Анна Воронина</div>
 								<img class="profile-client__line" src="img/elements/choice-bg-2.svg" alt="">
@@ -116,6 +113,57 @@
 								</div>
 							</div>
 						</a>
+						<!-- расписание сессии -->
+						<div class="client-page__session session-client">
+							<div class="session-client__text">Cессия</div>
+							<div class="session-client__block-time">
+								<div class="session-client__top">
+									<div class="session-client__data">Чт, 13 апр. 2023 г</div>
+									<div class="session-client__time">14:00-15:00</div>
+								</div>
+								<div data-spollers class="session-client__status">
+									<div class="session-client__accordion">
+										<button data-spoller-close class="session-client__button session-client__sublist-item_01" type="button" data-spoller>
+											<img src="img/icons/state/circle-of-circles.svg" alt="">
+											Подтверждена
+										</button>
+										<div class="session-client__sublist">
+											<a href="" class="session-client__sublist-item session-client__sublist-item_01">
+												<img src="img/icons/state/circle-emphasis.svg" alt="">
+												<div class="session-client__sublist-text">
+													Не подтверждена
+												</div>
+											</a>
+											<a href="" class="session-client__sublist-item session-client__sublist-item_02">
+												<img src="img/icons/state/pause.svg" alt="">
+												<div class="session-client__sublist-text">
+													В процессе
+												</div>
+											</a>
+											<a href="" class="session-client__sublist-item session-client__sublist-item_03">
+												<img src="img/icons/state/confirmed.svg" alt="">
+												<div class="session-client__sublist-text">
+													Проведена
+												</div>
+											</a>
+											<a href="" class="session-client__sublist-item session-client__sublist-item_04">
+												<img src="img/icons/state/arrow-repeat.svg" alt="">
+												<div class="session-client__sublist-text">
+													Перенос
+												</div>
+											</a>
+											<a href="" class="session-client__sublist-item session-client__sublist-item_05">
+												<img src="img/icons/state/stop.svg" alt="">
+												<div class="session-client__sublist-text">
+													Отклонена
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- кнопки -->
 						<div class="client-page__btns">
 							<a class="client-page__btn client-page__btn_plus btn" href="/newDS">
 								Добавить ДС
@@ -174,7 +222,6 @@
 									<img src="img/person/download.svg" alt="">
 									<span>Разбор ДС</span>
 								</a>
-
 								<a href="feedback.html" class="client-content__item">
 									<img src="img/person/feedback.svg" alt="">
 									<span>ОС Паттерны</span>
@@ -211,7 +258,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230412154638"></script>
+	<script src="js/app.min.js?_v=20230417140832"></script>
 </body>
 
 </html>
