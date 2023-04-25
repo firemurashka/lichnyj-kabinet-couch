@@ -214,6 +214,14 @@
                     _slideUp(spollerActiveTitle.nextElementSibling, spollerSpeed);
                 }
             }
+            document.addEventListener("click", (event => {
+                const spollersBlocks = Array.from(document.querySelectorAll("[data-spollers]"));
+                const isTargetingSpoller = spollersBlocks.some((spollersBlock => {
+                    const spollerTitles = Array.from(spollersBlock.querySelectorAll("[data-spoller]"));
+                    return spollerTitles.some((spollerTitle => spollerTitle.contains(event.target)));
+                }));
+                if (!isTargetingSpoller) spollersBlocks.forEach((spollersBlock => hideSpollersBody(spollersBlock)));
+            }));
         }
     }
     function tabs() {
