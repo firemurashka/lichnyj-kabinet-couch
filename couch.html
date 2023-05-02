@@ -5,16 +5,16 @@
 	<title>Личный кабинет коуча</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230425110228">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230502180003">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230425110228" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230425110228" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230502180003" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230502180003" rel="stylesheet">
 
 </head>
 
 <body>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?_v=20230425110228">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?_v=20230502180003">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -95,452 +95,916 @@
 				<div class="account-main__container">
 					<div class="account-main__body">
 						<div class="account-main__couch-data">
-							<!-- мои клиенты - лк коуча главная страница -->
+							<!--  Мои клиенты -->
 							<div class="couch-my-clients">
 								<h2 class="couch-my-clients__title title">
 									Мои клиенты
 								</h2>
 								<div class="couch-my-clients__content">
-									<form method="post" class="couch-my-clients__form">
-										<!-- оставить только 1 блок  button-->
-										<!--{% for user in users %}-->
-										<!-- <button class="couch-my-clients__block-text text-block-my-clients" name="link" value="{{user[4]}}"> -->
-										<!-- <button class="couch-my-clients__block-text text-block-my-clients" name="link" value="{{user[4]}}">
+									<div class="couch-my-clients__scroll _scroll">
+										<form method="post" class="couch-my-clients__form">
+											<!-- оставить только 1 блок  button-->
+											<!--{% for user in users %}-->
+											<!-- <button class="couch-my-clients__block-text text-block-my-clients" name="link" value="{{user[4]}}"> -->
+											<!-- <button class="couch-my-clients__block-text text-block-my-clients" name="link" value="{{user[4]}}">
                                                 <div class="text-block-my-clients__client">
                                                     <div class="text-block-my-clients__image-box">
                                                         <div class="text-block-my-clients__image"> -->
-										<!-- <span class="text-block-my-clients__word">{{user[0][0]}}</span> -->
-										<!--    <span class="text-block-my-clients__word">А</span>
+											<!-- <span class="text-block-my-clients__word">{{user[0][0]}}</span> -->
+											<!--    <span class="text-block-my-clients__word">А</span>
                                                         </div>
                                                     </div> -->
-										<!-- <div class="text-block-my-clients__title">{{user[0]+ " " + user[2]}}</div> -->
-										<!--  <div class="text-block-my-clients__title">Анна Воронина</div>
+											<!-- <div class="text-block-my-clients__title">{{user[0]+ " " + user[2]}}</div> -->
+											<!--  <div class="text-block-my-clients__title">Анна Воронина</div>
                                                 </div>
                                                 <div class="text-block-my-clients__right">
                                                     <div class="text-block-my-clients__btn _icon-arrow-down"></div>
                                                 </div>
                                             </button> -->
-										<!--  {% end %} -->
-										<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
-											<div class="text-block-my-clients__client">
-												<div class="text-block-my-clients__image-box">
-													<div class="text-block-my-clients__image">
-														<span class="text-block-my-clients__word">А</span>
+											<!--  {% end %} -->
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">А</span>
+														</div>
 													</div>
+													<div class="text-block-my-clients__title">Антон Уфимцев</div>
 												</div>
-												<div class="text-block-my-clients__title">Антон Уфимцев</div>
-											</div>
-											<div class="text-block-my-clients__right">
-												<div class="text-block-my-clients__btn _icon-arrow-down"></div>
-											</div>
-										</a>
-										<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
-											<div class="text-block-my-clients__client">
-												<div class="text-block-my-clients__image-box">
-													<div class="text-block-my-clients__image">
-														<span class="text-block-my-clients__word">Л</span>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">Л</span>
+														</div>
 													</div>
+													<div class="text-block-my-clients__title">Лейла Багдади</div>
 												</div>
-												<div class="text-block-my-clients__title">Лейла Багдади</div>
-											</div>
-											<div class="text-block-my-clients__right">
-												<div class="text-block-my-clients__btn _icon-arrow-down"></div>
-											</div>
-										</a>
-										<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
-											<div class="text-block-my-clients__client">
-												<div class="text-block-my-clients__image-box">
-													<div class="text-block-my-clients__image">
-														<span class="text-block-my-clients__word">Н</span>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">Н</span>
+														</div>
 													</div>
+													<div class="text-block-my-clients__title">Никита Лобанов</div>
 												</div>
-												<div class="text-block-my-clients__title">Никита Лобанов</div>
-											</div>
-											<div class="text-block-my-clients__right">
-												<div class="text-block-my-clients__btn _icon-arrow-down"></div>
-											</div>
-										</a>
-										<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
-											<div class="text-block-my-clients__client">
-												<div class="text-block-my-clients__image-box">
-													<div class="text-block-my-clients__image">
-														<span class="text-block-my-clients__word">Т</span>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">Т</span>
+														</div>
 													</div>
+													<div class="text-block-my-clients__title">Татьяна Шелковникова</div>
 												</div>
-												<div class="text-block-my-clients__title">Татьяна Шелковникова</div>
-											</div>
-											<div class="text-block-my-clients__right">
-												<div class="text-block-my-clients__btn _icon-arrow-down"></div>
-											</div>
-										</a>
-									</form>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">А</span>
+														</div>
+													</div>
+													<div class="text-block-my-clients__title">Антон Уфимцев</div>
+												</div>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">Л</span>
+														</div>
+													</div>
+													<div class="text-block-my-clients__title">Лейла Багдади</div>
+												</div>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">Н</span>
+														</div>
+													</div>
+													<div class="text-block-my-clients__title">Никита Лобанов</div>
+												</div>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">Т</span>
+														</div>
+													</div>
+													<div class="text-block-my-clients__title">Татьяна Шелковникова</div>
+												</div>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">А</span>
+														</div>
+													</div>
+													<div class="text-block-my-clients__title">Антон Уфимцев</div>
+												</div>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">Л</span>
+														</div>
+													</div>
+													<div class="text-block-my-clients__title">Лейла Багдади</div>
+												</div>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">Н</span>
+														</div>
+													</div>
+													<div class="text-block-my-clients__title">Никита Лобанов</div>
+												</div>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+											<a href="client-page.html" class="couch-my-clients__block-text text-block-my-clients" name="link" value="11">
+												<div class="text-block-my-clients__client">
+													<div class="text-block-my-clients__image-box">
+														<div class="text-block-my-clients__image">
+															<span class="text-block-my-clients__word">Т</span>
+														</div>
+													</div>
+													<div class="text-block-my-clients__title">Татьяна Шелковникова</div>
+												</div>
+												<div class="text-block-my-clients__right">
+													<div class="text-block-my-clients__btn _icon-arrow-down"></div>
+												</div>
+											</a>
+										</form>
+									</div>
 									<!--  <a href="/my_clients" class="couch-my-clients__link _icon-arrow-up"></a> -->
 									<a href="my_clients.html" class="couch-my-clients__link _icon-arrow-up">
 										Все клиенты
 									</a>
 								</div>
 							</div>
+							<!--  Журнал сессий -->
 							<div class="couch-my-event">
 								<h2 class="couch-my-event__title title">
 									Журнал сессий
 								</h2>
 								<div class="couch-my-event__content couch-session">
-									<!-- клиент 1 -->
-									<div class="couch-session__item">
-										<div class="couch-session__block-time">
-											<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
-											<div class="couch-session__time">14:00-15:00</div>
+									<div class="couch-my-event__scroll _scroll">
+										<!-- клиент 1 -->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">
+												Иван Петров
+											</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
+														<img src="img/icons/state/circle-emphasis.svg" alt="">
+														Не назначена
+													</button>
+													<div class="couch-session__sublist">
+														<!-- Ждёт подтверждения -->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/wait-time.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Ждёт подтверждения
+															</div>
+														</a>
+														<!-- Подтверждена -->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-of-circles.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Подтверждена
+															</div>
+														</a>
+														<!-- В процессе-->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/pause.svg" alt="">
+															<div class="couch-session__sublist-text">
+																В процессе
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/confirmed.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Проведена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/arrow-repeat.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Перенесена
+															</div>
+														</a>
+														<!-- Отклонена -->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/stop.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Отклонена
+															</div>
+														</a>
+														<!-- Формирование КЖО -->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/map.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Формирование КЖО
+															</div>
+														</a>
+														<!-- Обработана -->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/check-person.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Обработана
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
 										</div>
-										<a href="client-page.html" class="couch-session__text">
-											Иван Петров
-										</a>
-										<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
-											<img src="img/icons/project-launch.svg" alt="">
-										</a>
-										<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
-											<img src="img/icons/video.svg" alt="">
-										</a>
-										<div data-spollers class="couch-session__status">
-											<div class="couch-session__accordion">
-												<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
-													<img src="img/icons/state/circle-emphasis.svg" alt="">
-													Не назначена
-												</button>
-												<div class="couch-session__sublist">
-													<!-- Ждёт подтверждения -->
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+										<!-- клиент  2-->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">
+												Антон Уфимцев
+											</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
 														<img src="img/icons/state/wait-time.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Ждёт подтверждения
-														</div>
-													</a>
-													<!-- Подтверждена -->
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
-														<img src="img/icons/state/circle-of-circles.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Подтверждена
-														</div>
-													</a>
-													<!-- В процессе-->
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
-														<img src="img/icons/state/pause.svg" alt="">
-														<div class="couch-session__sublist-text">
-															В процессе
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
-														<img src="img/icons/state/confirmed.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Проведена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
-														<img src="img/icons/state/arrow-repeat.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Перенесена
-														</div>
-													</a>
-													<!-- Отклонена -->
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
-														<img src="img/icons/state/stop.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Отклонена
-														</div>
-													</a>
-													<!-- Формирование КЖО -->
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
-														<img src="img/icons/state/map.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Формирование КЖО
-														</div>
-													</a>
-													<!-- Обработана -->
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
-														<img src="img/icons/state/check-person.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Обработана
-														</div>
-													</a>
+														Ждёт подтверждения
+													</button>
+													<div class="couch-session__sublist">
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-emphasis.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Не назначена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/pause.svg" alt="">
+															<div class="couch-session__sublist-text">
+																В процессе
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/confirmed.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Проведена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/arrow-repeat.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Перенесена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/stop.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Отклонена
+															</div>
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<!-- клиент  2-->
-									<div class="couch-session__item">
-										<div class="couch-session__block-time">
-											<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
-											<div class="couch-session__time">14:00-15:00</div>
-										</div>
-										<a href="client-page.html" class="couch-session__text">
-											Антон Уфимцев
-										</a>
-										<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
-											<img src="img/icons/project-launch.svg" alt="">
-										</a>
-										<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
-											<img src="img/icons/video.svg" alt="">
-										</a>
-										<div data-spollers class="couch-session__status">
-											<div class="couch-session__accordion">
-												<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
-													<img src="img/icons/state/circle-of-circles.svg" alt="">
-													Подтверждена
-												</button>
-												<div class="couch-session__sublist">
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
-														<img src="img/icons/state/circle-emphasis.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Не назначена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+										<!-- клиент  3-->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">
+												Татьяна Шелковникова
+											</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
 														<img src="img/icons/state/pause.svg" alt="">
-														<div class="couch-session__sublist-text">
-															В процессе
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
-														<img src="img/icons/state/confirmed.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Проведена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
-														<img src="img/icons/state/arrow-repeat.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Перенесена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
-														<img src="img/icons/state/stop.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Отклонена
-														</div>
-													</a>
+														В процессе
+													</button>
+													<div class="couch-session__sublist">
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-emphasis.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Не назначена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/circle-of-circles.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Подтверждена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/confirmed.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Проведена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/arrow-repeat.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Перенесена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/stop.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Отклонена
+															</div>
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<!-- клиент  3-->
-									<div class="couch-session__item">
-										<div class="couch-session__block-time">
-											<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
-											<div class="couch-session__time">14:00-15:00</div>
-										</div>
-										<a href="client-page.html" class="couch-session__text">
-											Татьяна Шелковникова
-										</a>
-										<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
-											<img src="img/icons/project-launch.svg" alt="">
-										</a>
-										<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
-											<img src="img/icons/video.svg" alt="">
-										</a>
-										<div data-spollers class="couch-session__status">
-											<div class="couch-session__accordion">
-												<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
-													<img src="img/icons/state/pause.svg" alt="">
-													В процессе
-												</button>
-												<div class="couch-session__sublist">
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
-														<img src="img/icons/state/circle-emphasis.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Не назначена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
-														<img src="img/icons/state/circle-of-circles.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Подтверждена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+										<!-- клиент  4-->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">Лейла Багдади</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
 														<img src="img/icons/state/confirmed.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Проведена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
-														<img src="img/icons/state/arrow-repeat.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Перенесена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
-														<img src="img/icons/state/stop.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Отклонена
-														</div>
-													</a>
+														Проведена
+													</button>
+													<div class="couch-session__sublist">
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-emphasis.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Не назначена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/circle-of-circles.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Подтверждена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/pause.svg" alt="">
+															<div class="couch-session__sublist-text">
+																В процессе
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/arrow-repeat.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Перенесена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/stop.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Отклонена
+															</div>
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<!-- клиент  4-->
-									<div class="couch-session__item">
-										<div class="couch-session__block-time">
-											<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
-											<div class="couch-session__time">14:00-15:00</div>
-										</div>
-										<a href="client-page.html" class="couch-session__text">Лейла Багдади</a>
-										<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
-											<img src="img/icons/project-launch.svg" alt="">
-										</a>
-										<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
-											<img src="img/icons/video.svg" alt="">
-										</a>
-										<div data-spollers class="couch-session__status">
-											<div class="couch-session__accordion">
-												<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
-													<img src="img/icons/state/confirmed.svg" alt="">
-													Проведена
-												</button>
-												<div class="couch-session__sublist">
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
-														<img src="img/icons/state/circle-emphasis.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Не назначена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
-														<img src="img/icons/state/circle-of-circles.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Подтверждена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
-														<img src="img/icons/state/pause.svg" alt="">
-														<div class="couch-session__sublist-text">
-															В процессе
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+										<!-- клиент  5-->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">Иван Петров</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
 														<img src="img/icons/state/arrow-repeat.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Перенесена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
-														<img src="img/icons/state/stop.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Отклонена
-														</div>
-													</a>
+														Перенесена
+													</button>
+													<div class="couch-session__sublist">
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-emphasis.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Не назначена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/circle-of-circles.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Подтверждена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/pause.svg" alt="">
+															<div class="couch-session__sublist-text">
+																В процессе
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/confirmed.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Проведена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/stop.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Отклонена
+															</div>
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<!-- клиент  5-->
-									<div class="couch-session__item">
-										<div class="couch-session__block-time">
-											<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
-											<div class="couch-session__time">14:00-15:00</div>
-										</div>
-										<a href="client-page.html" class="couch-session__text">Иван Петров</a>
-										<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
-											<img src="img/icons/project-launch.svg" alt="">
-										</a>
-										<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
-											<img src="img/icons/video.svg" alt="">
-										</a>
-										<div data-spollers class="couch-session__status">
-											<div class="couch-session__accordion">
-												<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
-													<img src="img/icons/state/arrow-repeat.svg" alt="">
-													Перенесена
-												</button>
-												<div class="couch-session__sublist">
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
-														<img src="img/icons/state/circle-emphasis.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Не назначена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
-														<img src="img/icons/state/circle-of-circles.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Подтверждена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
-														<img src="img/icons/state/pause.svg" alt="">
-														<div class="couch-session__sublist-text">
-															В процессе
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
-														<img src="img/icons/state/confirmed.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Проведена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+										<!-- клиент 6-->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">Никита Лобанов</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
 														<img src="img/icons/state/stop.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Отклонена
-														</div>
-													</a>
+														Отклонена
+													</button>
+													<div class="couch-session__sublist">
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-emphasis.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Не назначена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/circle-of-circles.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Подтверждена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/pause.svg" alt="">
+															<div class="couch-session__sublist-text">
+																В процессе
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/confirmed.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Проведена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/arrow-repeat.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Перенесена
+															</div>
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<!-- клиент 6-->
-									<div class="couch-session__item">
-										<div class="couch-session__block-time">
-											<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
-											<div class="couch-session__time">14:00-15:00</div>
-										</div>
-										<a href="client-page.html" class="couch-session__text">Никита Лобанов</a>
-										<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
-											<img src="img/icons/project-launch.svg" alt="">
-										</a>
-										<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
-											<img src="img/icons/video.svg" alt="">
-										</a>
-										<div data-spollers class="couch-session__status">
-											<div class="couch-session__accordion">
-												<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
-													<img src="img/icons/state/stop.svg" alt="">
-													Отклонена
-												</button>
-												<div class="couch-session__sublist">
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+										<!-- клиент 1 -->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">
+												Иван Петров
+											</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
 														<img src="img/icons/state/circle-emphasis.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Не назначена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+														Не назначена
+													</button>
+													<div class="couch-session__sublist">
+														<!-- Ждёт подтверждения -->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/wait-time.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Ждёт подтверждения
+															</div>
+														</a>
+														<!-- Подтверждена -->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-of-circles.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Подтверждена
+															</div>
+														</a>
+														<!-- В процессе-->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/pause.svg" alt="">
+															<div class="couch-session__sublist-text">
+																В процессе
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/confirmed.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Проведена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/arrow-repeat.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Перенесена
+															</div>
+														</a>
+														<!-- Отклонена -->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/stop.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Отклонена
+															</div>
+														</a>
+														<!-- Формирование КЖО -->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/map.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Формирование КЖО
+															</div>
+														</a>
+														<!-- Обработана -->
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/check-person.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Обработана
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- клиент  2-->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">
+												Антон Уфимцев
+											</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
 														<img src="img/icons/state/circle-of-circles.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Подтверждена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+														Подтверждена
+													</button>
+													<div class="couch-session__sublist">
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-emphasis.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Не назначена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/pause.svg" alt="">
+															<div class="couch-session__sublist-text">
+																В процессе
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/confirmed.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Проведена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/arrow-repeat.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Перенесена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/stop.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Отклонена
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- клиент  3-->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">
+												Татьяна Шелковникова
+											</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
 														<img src="img/icons/state/pause.svg" alt="">
-														<div class="couch-session__sublist-text">
-															В процессе
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+														В процессе
+													</button>
+													<div class="couch-session__sublist">
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-emphasis.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Не назначена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/circle-of-circles.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Подтверждена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/confirmed.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Проведена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/arrow-repeat.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Перенесена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/stop.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Отклонена
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- клиент  4-->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">Лейла Багдади</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
 														<img src="img/icons/state/confirmed.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Проведена
-														</div>
-													</a>
-													<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+														Проведена
+													</button>
+													<div class="couch-session__sublist">
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-emphasis.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Не назначена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/circle-of-circles.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Подтверждена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/pause.svg" alt="">
+															<div class="couch-session__sublist-text">
+																В процессе
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/arrow-repeat.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Перенесена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/stop.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Отклонена
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- клиент  5-->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">Иван Петров</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
 														<img src="img/icons/state/arrow-repeat.svg" alt="">
-														<div class="couch-session__sublist-text">
-															Перенесена
-														</div>
-													</a>
+														Перенесена
+													</button>
+													<div class="couch-session__sublist">
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-emphasis.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Не назначена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/circle-of-circles.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Подтверждена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/pause.svg" alt="">
+															<div class="couch-session__sublist-text">
+																В процессе
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/confirmed.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Проведена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/stop.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Отклонена
+															</div>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- клиент 6-->
+										<div class="couch-session__item">
+											<div class="couch-session__block-time">
+												<div class="couch-session__data">Чт, 13 апр. 2023 г</div>
+												<div class="couch-session__time">14:00-15:00</div>
+											</div>
+											<a href="client-page.html" class="couch-session__text">Никита Лобанов</a>
+											<a class="couch-session__record" target="_blank" title="Заполнения ДС" href="">
+												<img src="img/icons/project-launch.svg" alt="">
+											</a>
+											<a class="couch-session__video" target="_blank" title="Начать сессию" href="https://meet.jit.si/neuronircl13co0">
+												<img src="img/icons/video.svg" alt="">
+											</a>
+											<div data-spollers class="couch-session__status">
+												<div class="couch-session__accordion">
+													<button data-spoller-close class="couch-session__button couch-session__sublist-item_01" type="button" data-spoller>
+														<img src="img/icons/state/stop.svg" alt="">
+														Отклонена
+													</button>
+													<div class="couch-session__sublist">
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_01">
+															<img src="img/icons/state/circle-emphasis.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Не назначена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_02">
+															<img src="img/icons/state/circle-of-circles.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Подтверждена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_03">
+															<img src="img/icons/state/pause.svg" alt="">
+															<div class="couch-session__sublist-text">
+																В процессе
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_04">
+															<img src="img/icons/state/confirmed.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Проведена
+															</div>
+														</a>
+														<a href="" class="couch-session__sublist-item couch-session__sublist-item_05">
+															<img src="img/icons/state/arrow-repeat.svg" alt="">
+															<div class="couch-session__sublist-text">
+																Перенесена
+															</div>
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+							<!--  Мой календарь -->
 							<div class="couch-my-сalendar">
 								<h2 class="couch-my-сalendar__title title">
 									Мой календарь
@@ -565,42 +1029,42 @@
 					<div class="articles-main__body">
 						<div class="articles-main__articles">
 							<ul class="articles-main__list">
-								<li class="articles-main__item">
-									<a href="" class="articles-main__link">
-										<picture><source srcset="img/articles/articles01.webp" type="image/webp"><img class="articles-main__image -ibg" src="img/articles/articles01.jpg" alt=""></picture>
-										<div class="articles-main__content">
-											<div class="articles-main__data">03.04.2023</div>
-											<h2 class="articles-main__title">ЧТО ТАКОЕ КОУЧИНГ?</h2>
-											<div class="articles-main__rubrics">
-												<div class="articles-main__rubric">
+								<li class="articles-main__item article-item">
+									<a href="" class="article-item__link">
+										<picture><source srcset="img/articles/articles01.webp" type="image/webp"><img class="article-item__image -ibg" src="img/articles/articles01.jpg" alt=""></picture>
+										<div class="article-item__content">
+											<div class="article-item__data">03.04.2023</div>
+											<h2 class="article-item__title">ЧТО ТАКОЕ КОУЧИНГ?</h2>
+											<div class="article-item__rubrics">
+												<div class="article-item__rubric">
 													Профессиональный коучинг
 												</div>
 											</div>
 										</div>
 									</a>
 								</li>
-								<li class="articles-main__item">
-									<a href="" class="articles-main__link">
-										<picture><source srcset="img/articles/articles01.webp" type="image/webp"><img class="articles-main__image -ibg" src="img/articles/articles01.jpg" alt=""></picture>
-										<div class="articles-main__content">
-											<div class="articles-main__data">03.04.2023</div>
-											<h2 class="articles-main__title">ЧТО ТАКОЕ КОУЧИНГ?</h2>
-											<div class="articles-main__rubrics">
-												<div class="articles-main__rubric">
+								<li class="articles-main__item article-item">
+									<a href="" class="article-item__link">
+										<picture><source srcset="img/articles/articles01.webp" type="image/webp"><img class="article-item__image -ibg" src="img/articles/articles01.jpg" alt=""></picture>
+										<div class="article-item__content">
+											<div class="article-item__data">03.04.2023</div>
+											<h2 class="article-item__title">ЧТО ТАКОЕ КОУЧИНГ?</h2>
+											<div class="article-item__rubrics">
+												<div class="article-item__rubric">
 													Профессиональный коучинг
 												</div>
 											</div>
 										</div>
 									</a>
 								</li>
-								<li class="articles-main__item">
-									<a href="" class="articles-main__link">
-										<picture><source srcset="img/articles/articles01.webp" type="image/webp"><img class="articles-main__image -ibg" src="img/articles/articles01.jpg" alt=""></picture>
-										<div class="articles-main__content">
-											<div class="articles-main__data">03.04.2023</div>
-											<h2 class="articles-main__title">ЧТО ТАКОЕ КОУЧИНГ?</h2>
-											<div class="articles-main__rubrics">
-												<div class="articles-main__rubric">
+								<li class="articles-main__item article-item">
+									<a href="" class="article-item__link">
+										<picture><source srcset="img/articles/articles01.webp" type="image/webp"><img class="article-item__image -ibg" src="img/articles/articles01.jpg" alt=""></picture>
+										<div class="article-item__content">
+											<div class="article-item__data">03.04.2023</div>
+											<h2 class="article-item__title">ЧТО ТАКОЕ КОУЧИНГ?</h2>
+											<div class="article-item__rubrics">
+												<div class="article-item__rubric">
 													Профессиональный коучинг
 												</div>
 											</div>
@@ -669,7 +1133,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230425110228"></script>
+	<script src="js/app.min.js?_v=20230502180003"></script>
 </body>
 
 </html>

@@ -5,11 +5,11 @@
 	<title>Мои клиенты</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230425110228">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230502180003">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230425110228" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230425110228" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230502180003" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230502180003" rel="stylesheet">
 
 </head>
 
@@ -93,32 +93,34 @@
 			<section class="account">
 				<div class="account__container">
 					<div class="account__title title">
-						Мои клиенты
+						<span>Мои клиенты</span>
+						<a class="account__btn  account__btn_plus btn" href="">Добавить клиента<img src="img/icons/plus-circle.svg" alt=""></a>
+
 					</div>
 					<div class="account__body">
 						<div class="account__left">
 							<form class="account__form form-filter" action="">
+								<div class="form-filter__title">Параметры поиска</div>
 								<div class="form-filter__block">
-									<div class="form-filter__title">Сортировка</div>
-									<select data-submit data-scroll name="form[]" class="form">
-										<option value="" class="form-filter__option_1 _icon-arrow-up" selected>По имени</option>
-										<option value="2" class="form-filter__option_2  _icon-arrow-up">По имени</option>
-										<option value="3" class="form-filter__option_3  _icon-arrow-up">По фамилии</option>
-										<option value="4" class="form-filter__option_4  _icon-arrow-up">По фамилии</option>
-									</select>
-								</div>
-								<div class="form-filter__block">
-									<div class="form-filter__title">Параметры поиска</div>
 									<div class="form-filter__item">
 										<div class="form-filter__subtitle">Возраст</div>
-										<select data-submit data-scroll name="form[]" class="form">
-											<option value="" selected>от 29</option>
-											<option value="2">30</option>
-										</select>
-										<select data-submit data-scroll name="form[]" class="form">
-											<option value="" selected>до 65</option>
-											<option value="2">66</option>
-										</select>
+										<div class="form-filter__age">
+											От
+											<select data-submit data-scroll name="form[]" class="form">
+												<option value="29" selected>29</option>
+												<option value="30">30</option>
+												<option value="31">31</option>
+												<option value="32">32</option>
+												<option value="33">33</option>
+											</select>
+										</div>
+										<div class="form-filter__age">
+											До
+											<select data-submit data-scroll name="form[]" class="form">
+												<option value="65">65</option>
+												<option value="66">66</option>
+											</select>
+										</div>
 									</div>
 									<div class="form-filter__item">
 										<div class="form-filter__subtitle">Пол</div>
@@ -133,31 +135,61 @@
 									</div>
 									<div class="form-filter__item">
 										<div class="form-filter__subtitle">Проведения ДС</div>
-										<select data-submit data-scroll name="form[]" class="form">
-											<option value="" selected>год</option>
-											<option value="2">2022</option>
-											<option value="3">2021</option>
-											<option value="4">2020</option>
-										</select>
-										<select data-submit data-scroll name="form[]" class="form">
-											<option value="" selected>месяц</option>
-											<option value="2">январь</option>
-											<option value="3">февраль</option>
-										</select>
-										<select data-submit data-scroll name="form[]" class="form">
-											<option value="" selected>число</option>
-											<option value="2">1</option>
-											<option value="3">2</option>
-										</select>
+										<div class="form-filter__age">
+											Год
+											<select data-submit data-scroll name="form[]" class="form">
+												<option value="2023">2023</option>
+												<option value="2022">2022</option>
+												<option value="2021">2021</option>
+												<option value="2020">2020</option>
+											</select>
+										</div>
+										<div class="form-filter__age">
+											Месяц
+											<select data-submit data-scroll name="form[]" class="form">
+												<option value="january">январь</option>
+												<option value="february">февраль</option>
+												<option value="march">март</option>
+											</select>
+										</div>
+										<div class="form-filter__age">
+											Число
+											<select data-submit data-scroll name="form[]" class="form">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+
+											</select>
+										</div>
 									</div>
+									<a class="form-filter__btn btn" href="">Найти</a>
 								</div>
 							</form>
 						</div>
 						<div class="account__right">
 							<div class="account__couch-data">
 								<div class="couch-my-clients">
+									<form action="" method="get" class="couch-my-clients__filter clients-filter">
+										<div class="clients-filter__block">
+											<div class="clients-filter__title">Сортировка</div>
+											<select name="sort" id="js-sort" data-submit data-scroll class="sort">
+												<option value="name_increase" data-class="clients-filter__option_1 ">По имени (А-Я)</option>
+												<option value="2" data-class="clients-filter__option_2">По имени (Я-А)</option>
+												<option value="3" data-class="clients-filter__option_3">По фамилии (А-Я)</option>
+												<option value="4" data-class="clients-filter__option_4">По фамилии (Я-А)</option>
+											</select>
+										</div>
+									</form>
 									<div class="couch-my-clients__content">
-										<div class="couch-my-clients__content-block">
+										<div class="couch-my-clients__content-block _scroll">
 											<!-- 1 клиент -->
 											<div class="couch-my-clients__block-text text-block-my-clients">
 												<div class="text-block-my-clients__client">
@@ -585,13 +617,12 @@
 						</div>
 					</div>
 				</div>
-	</div>
-	</section>
-	</main>
-	<footer class="footer">
-		<div class="footer__container">
-		</div>
-	</footer>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
 	</div>
 	<div id="popup-search" aria-hidden="true" class="popup-search popup">
 		<div class="popup__wrapper">
@@ -606,7 +637,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230425110228"></script>
+	<script src="js/app.min.js?_v=20230502180003"></script>
 </body>
 
 </html>
