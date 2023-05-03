@@ -899,9 +899,10 @@ animation: ani 0.5s forwards;
 }
 @media (max-width: 1100px) {
   .account-main__couch-data {
-    grid-template-columns: 30% 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     row-gap: 1.875rem;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 900px) {
@@ -931,12 +932,6 @@ animation: ani 0.5s forwards;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-@media (max-width: 1100px) {
-  .couch-my-clients__content {
-    height: auto;
-    max-height: 400px;
-  }
 }
 .couch-my-clients__content-block {
   display: flex;
@@ -1402,9 +1397,14 @@ animation: ani 0.5s forwards;
   grid-template-columns: repeat(3, 1fr);
   margin: 0px 0px 20px 0px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .articles-main__list {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 47.99875em) {
+  .articles-main__list {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .articles-main__links {
@@ -1441,15 +1441,18 @@ animation: ani 0.5s forwards;
 }
 .article-item__image {
   border-radius: 5px 0 0 5px;
-  object-fit: cover;
-  width: 30%;
   transition: all 1s ease 0s;
   opacity: 0.8;
-  min-height: 170px;
-  height: 100%;
+  width: 200px;
+  height: 200px;
 }
 .article-item__image:hover {
   opacity: 0.6;
+}
+@media (max-width: 47.99875em) {
+  .article-item__image {
+    width: 100%;
+  }
 }
 .article-item__link {
   display: flex;
@@ -1491,6 +1494,11 @@ animation: ani 0.5s forwards;
   transition: all 0.3s ease 0s;
   border: 1px solid #C2C2C2;
   cursor: pointer;
+}
+@media (max-width: 47.99875em) {
+  .article-item__rubric {
+    margin: 10px 0px 0px 0px;
+  }
 }
 .article-item__rubric:hover {
   background: #06ea6f;
@@ -3110,13 +3118,17 @@ animation: ani 0.5s forwards;
 }
 .articles__image {
   border-radius: 5px 0 0 5px;
-  object-fit: cover;
-  width: 25%;
   transition: all 1s ease 0s;
   opacity: 0.8;
+  min-width: 200px;
 }
 .articles__image:hover {
   opacity: 0.6;
+}
+@media (max-width: 47.99875em) {
+  .articles__image {
+    width: 100%;
+  }
 }
 .articles__change {
   position: absolute;
