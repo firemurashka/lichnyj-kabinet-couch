@@ -5,11 +5,11 @@
 	<title>Профиль</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230502180003">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230503163632">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230502180003" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230502180003" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext&_v=20230503163632" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap&subset=cyrillic-ext&_v=20230503163632" rel="stylesheet">
 
 </head>
 
@@ -95,7 +95,7 @@
 					<div class="client-subpage__block">
 						<div class="client-subpage__top">
 							<div class="client-subpage__top-profile">
-								<a href="client-page.html" class="client-subpage__profile profile-client">
+								<a href="client-page.html" class="client-subpage__profile profile-client _shadow">
 									<div class="profile-client__image">
 										<picture><source srcset="img/client/client01.webp" type="image/webp"><img src="img/client/client01.jpg" alt=""></picture>
 									</div>
@@ -103,17 +103,78 @@
 										<!-- <div class="profile-client__title">{{user[0]+ " " + user[2]}}</div> -->
 										<div class="profile-client__subtitle">Клиент</div>
 										<div class="profile-client__title">Анна Воронина</div>
-										<img class="profile-client__line" src="img/elements/choice-bg-2.svg" alt="">
-										<div class="profile-client__age">
-											Возраст:
-											<span>29 лет</span>
-										</div>
-										<div class="profile-client__gender">
-											Пол:
-											<span>женский</span>
-										</div>
+
 									</div>
 								</a>
+								<!-- расписание сессии -->
+								<div class="client-page__session session-client">
+									<div class="session-client__text">Cессия</div>
+									<div class="session-client__block-time">
+										<div class="session-client__top">
+											<div class="session-client__data">Чт, 13 апр. 2023 г</div>
+											<div class="session-client__time">14:00-15:00</div>
+										</div>
+										<div data-spollers data-one-spoller class="session-client__status">
+											<div class="session-client__accordion">
+												<button type="button" data-spoller data-spoller-close class="session-client__button session-client__sublist-item_01">
+													<img src="img/icons/state/wait-time.svg" alt="">
+													Ждёт подтверждения
+												</button>
+												<div class="session-client__sublist">
+													<!-- Подтверждена -->
+													<a href="" class="session-client__sublist-item session-client__sublist-item_01">
+														<img src="img/icons/state/circle-of-circles.svg" alt="">
+														<div class="session-client__sublist-text">
+															Подтверждена
+														</div>
+													</a>
+													<a href="" class="session-client__sublist-item session-client__sublist-item_01">
+														<img src="img/icons/state/circle-emphasis.svg" alt="">
+														<div class="session-client__sublist-text">
+															Не назначена
+														</div>
+													</a>
+													<a href="" class="session-client__sublist-item session-client__sublist-item_02">
+														<img src="img/icons/state/pause.svg" alt="">
+														<div class="session-client__sublist-text">
+															В процессе
+														</div>
+													</a>
+													<a href="" class="session-client__sublist-item session-client__sublist-item_03">
+														<img src="img/icons/state/confirmed.svg" alt="">
+														<div class="session-client__sublist-text">
+															Проведена
+														</div>
+													</a>
+													<a href="" class="session-client__sublist-item session-client__sublist-item_04">
+														<img src="img/icons/state/arrow-repeat.svg" alt="">
+														<div class="session-client__sublist-text">
+															Перенесена
+														</div>
+													</a>
+													<a href="" class="session-client__sublist-item session-client__sublist-item_05">
+														<img src="img/icons/state/stop.svg" alt="">
+														<div class="session-client__sublist-text">
+															Отклонена
+														</div>
+													</a>
+													<a href="" class="session-client__sublist-item session-client__sublist-item_05">
+														<img src="img/icons/state/map.svg" alt="">
+														<div class="session-client__sublist-text">
+															Формирование КЖО
+														</div>
+													</a>
+													<a href="" class="session-client__sublist-item session-client__sublist-item_05">
+														<img src="img/icons/state/check-person.svg" alt="">
+														<div class="session-client__sublist-text">
+															Обработана
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="client-subpage__btns">
 									<a class="client-subpage__btn client-page__btn_plus btn" href="/newDS">
 										CheckUp
@@ -124,6 +185,17 @@
 							</div>
 							<div class="client-subpage__menu menu-organizer">
 								<div class="menu-organizer__body">
+									<!--<a href="/view_customer_profile" class="menu-organizer__item"> -->
+									<a href="client-page.html" class="menu-organizer__item">
+										<div class="menu-organizer__content">
+											<h2 class="menu-organizer__title"> <img src="img/person/download.svg" alt="">
+												Профиль клиента</h2>
+										</div>
+										<div class="menu-organizer__arrow _icon-arrow-down"></div>
+									</a>
+
+
+
 									<a href="http://151.248.121.186/sessions" class="menu-organizer__item">
 										<div class="menu-organizer__content">
 											<h2 class="menu-organizer__title">Сессии</h2>
@@ -160,21 +232,147 @@
 										</div>
 										<div class="menu-organizer__arrow _icon-arrow-down"></div>
 									</a>
-									<!--<a href="/view_customer_profile" class="menu-organizer__item"> -->
-									<a href="view_customer_profile.html" class="menu-organizer__item">
-										<div class="menu-organizer__content">
-											<h2 class="menu-organizer__title">Профиль</h2>
-										</div>
-										<div class="menu-organizer__arrow _icon-arrow-down"></div>
-									</a>
 								</div>
 							</div>
 						</div>
 						<div class="client-subpage__body">
 							<div class="client-subpage__content">
-								<h1 class="client-subpage__title">Профиль</h1>
-								<div class="client-subpage__profile profile-subpage">
-
+								<h1 class="client-subpage__title">Профиль клиента </h1>
+								<div class="profile">
+									<div class="profile__item">
+										<div class="profile__body">
+											<!-- Фамилия -->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Фамилия:
+												</div>
+												<div class="profile__point">
+													Ершов
+												</div>
+											</div>
+											<!-- Имя -->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Имя:
+												</div>
+												<div class="profile__point">
+													Петр
+												</div>
+											</div>
+											<!-- Возраст -->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Возраст:
+												</div>
+												<div class="profile__point">
+													29 лет
+												</div>
+											</div>
+											<!--Город проживания-->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Город проживания:
+												</div>
+												<div class="profile__point">
+													Санкт-петербург
+												</div>
+											</div>
+											<!-- Семейное положение -->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Семейное положение:
+												</div>
+												<div class="profile__point">
+													женат
+												</div>
+											</div>
+											<!-- Образование -->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Образование:
+												</div>
+												<div class="profile__point">
+													высшее
+												</div>
+											</div>
+											<!-- Деятельность -->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Деятельность:
+												</div>
+												<div class="profile__point">
+													архитектор
+												</div>
+											</div>
+											<!-- Профессия -->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Профессия:
+												</div>
+												<div class="profile__point">
+													архитектор
+												</div>
+											</div>
+											<!-- Хобби/увлечения -->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Хобби/увлечения:
+												</div>
+												<div class="profile__point">
+													игры, бокс
+												</div>
+											</div>
+											<!-- Комментарий -->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Комментарий:
+												</div>
+												<div class="profile__point">
+													Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe possimus facilis praesentium quis dolorem fugit pariatur dignissimos soluta, sequi sapiente deserunt aspernatur magni quibusdam amet odit enim voluptatum nobis!
+												</div>
+											</div>
+											<!-- Социальные сети -->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Социальные сети:
+												</div>
+												<div class="profile__point profile__point_social">
+													<!-- Telegram телефон -->
+													<a title="Telegram" target="_blank" href="https://t.me/+79219999999" class="profile__icon">
+														<img src="img/icons/social/telegram.svg" alt="">
+													</a>
+													<!-- Whatsapp -->
+													<a title="Whatsapp" target="_blank" href="" class="profile__icon">
+														<img src="img/icons/social/whatsapp.svg" alt="">
+													</a>
+													<!--instagram  -->
+													<a title="Instagram" target="_blank" href="" class="profile__icon">
+														<img src="img/icons/social/instagram.svg" alt="">
+													</a>
+													<!--vk  -->
+													<a target="_blank" title="vk" href="" class="profile__icon">
+														<img src="img/icons/social/vk.svg" alt="">
+													</a>
+													<!--youtube  -->
+													<a target="_blank" title="youtube" href="" class="profile__icon">
+														<img src="img/icons/social/youtube.svg" alt="">
+													</a>
+												</div>
+											</div>
+											<!-- Резюме -->
+											<div class="profile__body-item">
+												<div class="profile__point profile__point_bold">
+													Резюме:
+												</div>
+												<div class="profile__point profile__point_download">
+													<a title="Резюме" target="_blank" href="#" download="" class="profile__download">
+														<img src="img/icons/pdf-icon.svg" alt="">
+														Скачать резюме
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -200,7 +398,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230502180003"></script>
+	<script src="js/app.min.js?_v=20230503163632"></script>
 </body>
 
 </html>
